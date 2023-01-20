@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodRecipe</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/mistral-ui@1.x.x/dist/cdn.min.js"></script>
+
+    <script>
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('multiselect', Mistral.multiselect)
+        })
+
+    </script>
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine Core -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </body>
+</html>
